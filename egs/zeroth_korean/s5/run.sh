@@ -41,7 +41,8 @@ if [ $stage -le 1 ]; then
   	local/data_prep.sh $db_dir $part
   done
 fi
-
+echo "success"
+exit
 if [ $stage -le 2 ]; then
   # update segmentation of transcripts
   for part in train_data_01 test_data_01; do
